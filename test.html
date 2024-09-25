@@ -12,6 +12,8 @@
     <!-- 引入swiper css -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 
     <style>
         /* 隱藏 Swiper 的原生按鈕 */
@@ -27,9 +29,9 @@
             /* 距離頂部 0 */
             width: 100%;
             /* 讓導覽列寬度佔滿頁面 */
-            z-index: 1000;
+            z-index: 99;
             /* 保持導覽列在最前方 */
-            background-color: rgba(0, 0, 49, 0.8);
+            background-color: rgba(0, 0, 0, 1);
             /* 導覽列背景色 */
             color: white;
             /* 文字顏色 */
@@ -44,13 +46,20 @@
             background-color: black;
         }
 
-
+        .company {
+            background-image: url("img/0.0首頁/company.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+        }
 
         .banner {
             margin-top: 60px;
             height: 100%;
             width: 100%;
-            background-image: url("img/SEP Website00.png");
+            background-image: url("img/0.0首頁/底圖.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -106,7 +115,7 @@
 
         .contact-01 {
             margin-top: 0px;
-            background-image: url('img/homepage_contact.png');
+            background-image: url('img/0.0首頁/homepage_contact.png');
             background-size: cover;
             /* 讓背景圖片等比例填滿容器 */
             background-position: right;
@@ -123,28 +132,92 @@
             height: 400px;
             width: 100%;
         }
+
+        #topBtn {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 5px;
+            right: 5px;
+            z-index: 999;
+            border: none;
+            outline: none;
+            background-color: rgb(0, 0, 255);
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 1px;
+            font-size: 20px;
+            position: fixed;
+        }
     </style>
 </head>
 
 <body id="home">
     <!-- 導覽列 -->
-    <header >
-        <div class="collapse " id="navbarHeader" >
+    <header>
+        <div class="collapse " id="navbarHeader">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-white">About</h4>
-                        <p class="text-muted">Add some information about the album below, the author, or any other
-                            background context. Make it a few sentences long so folks can pick up some informative
-                            tidbits. Then, link them off to some social networking sites or contact information.</p>
+                    <div class="col-lg-2 col-sm-4 offset-md-1 py-1">
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapse01" role="button"
+                                aria-expanded="false" aria-controls="collapse01">
+                                Company
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapse01">
+                            <div class="card card-body">
+                                <li><a href="#" class="text-black">Follow on Twitter</a></li>
+                                <li><a href="#" class="text-black">Like on Facebook</a></li>
+                                <li><a href="#" class="text-black">Email me</a></li>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contact</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                            <li><a href="#" class="text-white">Like on Facebook</a></li>
-                            <li><a href="#" class="text-white">Email me</a></li>
-                        </ul>
+                    <div class="col-lg-2 col-sm-4 offset-md-1 py-1">
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapse02" role="button"
+                                aria-expanded="false" aria-controls="collapse02">
+                                Industrial
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapse02">
+                            <div class="card card-body">
+                                <li><a href="#" class="text-black">Follow on Twitter</a></li>
+                                <li><a href="#" class="text-black">Like on Facebook</a></li>
+                                <li><a href="#" class="text-black">Email me</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 offset-md-1 py-1">
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapse03" role="button"
+                                aria-expanded="false" aria-controls="collapse03">
+                                Product
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapse03">
+                            <div class="card card-body">
+                                <li><a href="#" class="text-black">Follow on Twitter</a></li>
+                                <li><a href="#" class="text-black">Like on Facebook</a></li>
+                                <li><a href="#" class="text-black">Email me</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 offset-md-1 py-1">
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapse04" role="button"
+                                aria-expanded="false" aria-controls="collapse04">
+                                Service
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapse04">
+                            <div class="card card-body">
+                                <li><a href="#" class="text-black">Follow on Twitter</a></li>
+                                <li><a href="#" class="text-black">Like on Facebook</a></li>
+                                <li><a href="#" class="text-black">Email me</a></li>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -152,22 +225,20 @@
         <div class="navbar navbar-dark shadow-sm">
             <div class="container">
                 <a href="#home" class="navbar-brand d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
-                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
-                        viewBox="0 0 24 24">
-                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-                        <circle cx="12" cy="13" r="4" />
-                    </svg>
-                    <strong>SPE</strong>
+                    <img src="img/0.0首頁/logo.svg" height="30" class="me-2" alt="Logo" style="left: 0px;">
+                    <p style="padding-top:17px ;"> <i><strong>Scenic Precise <br>
+                                Element</strong></i></p>
+
                 </a>
-                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+
+                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto d-none d-md-block">
                     <a class="fs-8 me-3 py-2 text-white text-decoration-none" href="#company">Company</a>
-                    <a class="fs-8 me-3 py-2 text-white text-decoration-none" href="#Industrials">Industrials</a>
+                    <a class="fs-8 me-3 py-2 text-white text-decoration-none" href="#Industrials">Industrial</a>
                     <a class="fs-8 me-3 py-2 text-white text-decoration-none" href="#products">Product</a>
                     <a class="fs-8 me-3 py-2 text-white text-decoration-none" href="#services">Service</a>
                     <a class="fs-8 me-3 py-2 text-white text-decoration-none" href="#catalog">Catalog</a>
                     <a class="fs-8 me-3 py-2 text-white text-decoration-none" href="#download">Download</a>
-              
+
                 </nav>
                 <button class="navbar-toggler ms-5" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
@@ -177,90 +248,76 @@
             </div>
         </div>
 
-        <!-- <nav style="background-color: rgba(0, 0, 0,0.5);">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/SPE-logo.jpg" alt="Logo" height="50" class="d-inline-block align-text-top">
-                </a>
-            </div>
-        </nav> -->
+
     </header>
 
-
+    <!-- Top回首頁 -->
+    <button id="topBtn" class="btn btn-primary"><i class="bi bi-arrow-up"></i></button>
     <div class="container-fluid">
 
         <!-- 首頁Banner -->
-        <section class="banner" >
+        <section class="banner">
             <div class="row">
-                <div class="col-2" style="border: 1px solid white; ">
-                    <div class="model" style="border: 1px solid white;">
+                <div class="col-2 d-none d-md-block">
+                    <div class="model">
                         <strong>
-                            <p>第1組${型號1}</p>
+                            <p></p>
                             <p style="border-top: 5px solid blue ;width:5px "></p>
                         </strong>
-                        <p class="p-2" style="color: rgb(162, 162, 162);">第2組${型號2}</p>
-                        <p class="p-2" style="color: rgb(162, 162, 162);;">第3組${型號3}</p>
                         <div class="model-line">
-                            <div style="  border-left: 2px solid rgb(162, 162, 162); height: 100px;" width="500px">
-                            </div>
-                            <div style="  border-left: 2px solid rgb(0, 0, 255); height: 50px;" width="500px"></div>
+                            <div style="border-left: 2px solid rgb(162, 162, 162); height: 100px;" width="500px"></div>
+                            <div style="border-left: 2px solid rgb(0, 0, 255); height: 50px;" width="500px"></div>
                         </div>
                         <span class="page-number">01</span><span class="page">/03</span>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-3" style="border: 1px solid white;">
-                    <div class="model" style="border: 1px solid white;">
-                        <strong>
-                            <b>
-                                <h1>Future Leaders in Sealing Systam.</h1>
-                            </b>
-                            <p style="border-left: 5px solid blue ; padding-left: 10px;">SCENIC SEALS MAKE YOUR WORK
-                                EASY.
-                            </p>
-                        </strong>
-                        <p class="p-1" style="margin-top: 80px;">LD 388 / LD 389</p>
-                        <p>內文.........................</p>
-                        <div>
-                            <span style="color: rgb(207, 207, 207); font-size: 12px; ">read more
-                                <i class="bi bi-arrow-right-circle color-white"></i></span>
 
+                <!-- 產品圖片 -->
+                <div class="col">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
                         </div>
-                        <div class="model-line">
-                        </div>
-                    </div>
-                </div>
-                <div class="col" style="border: 1px solid white;">
-                    ${產品圖片1}
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="..." class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
-                            </div>
-                        </div>
+                        <div class="carousel-inner" id="carousel-content"></div>
+                        <button class="carousel-control carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- 公司介紹 -->
         <section class="company" id="company">
-            <div class="row" style="background-color: blue;">
-                <div class="col-lg-4 col-sm-6" style=" margin:50px; border: 1px solid white;" height="480px">
-                    <div class="model" style="border: 1px solid white;">
-                        <div style="border-left: 2px solid white;">
+            <div class="row">
+                <div class="col-6" style=" margin:50px;" height="480px">
+                    <div class="model">
+                        <div style="border-left: 5px solid white;">
                             <p class="p" style=" margin-left:10px ;">2021 Virtual Exhibition </p>
-                            <h5 style="color: white; margin-left:10px ; font-weight: bold ;">Company</h3>
+                            <h4 style="color: white; margin-left:10px ; font-weight: bold ;">Company</h4>
                         </div>
-                        <div>
-                            <p class="p" style=" margin-left:10px ;">內文.........................</p>
+                        <div style=" margin:10px ;">
+                            <p class="p" style=" margin:10px ;">
+                                <strong>Scenic Cartridge Mechanical Sellers-Saels</strong><br>
+                                Founded in 1986 and headquartered in Kaohsiung City, Scenic Precise Element (SPE) is one
+                                of the best known fluid sealing professionals in mechanical seal manufacturing and
+                                design
+                            </p>
                             <div>
                                 <span style="color: rgb(207, 207, 207); font-size: 12px; ">read more
-                                    <i class="bi bi-arrow-right-circle color-white"></i></span>
+                                    <img src="img/0.0首頁/箭頭.svg" style="width: 30px; "></span>
                             </div>
                         </div>
                     </div>
@@ -272,9 +329,9 @@
         <!-- 工業應用 -->
         <section class="industrials" id="Industrials">
             <div class="row" style="background-color: white;">
-                <div class="col-lg-10 col-sm-8" style=" margin:50px 0px 50px 50px; border: 1px solid black;"
+                <div class="col-lg-10 col-sm-8" style=" margin:50px 0px 50px 50px; "
                     height="100%">
-                    <div class="model" style="border: 1px solid black;">
+                    <div class="model" >
                         <div style="border-left: 2px solid blue;">
                             <p class="p" style="color: black; margin-left:10px ;">Where we work </p>
                             <h5 style="color: black; margin-left:10px ; font-weight: bold ;">Our Industrials
@@ -283,34 +340,12 @@
                             </h5>
 
                         </div>
-                        <div class="swiper-container ">
-                            <div class="swiper-wrapper ">
-                                <!-- Slide 1 -->
-                                <div class="swiper-slide col-2"
-                                    style="border: 1px solid black; text-align: center; height: 100%;width: 100%;">
-                                    1</div>
-
-                                <!-- Slide 2 -->
-                                <div class="swiper-slide col-2"
-                                    style="border: 1px solid black; text-align: center;height: 100%;width: 100%;">
-                                    2
-                                </div>
-                                <!-- Slide 3 -->
-                                <div class="swiper-slide col-2"
-                                    style="border: 1px solid black; text-align: center;height: 100%;width: 100%;">
-                                    3 </div>
-
-                                <!-- Slide 4 -->
-                                <div class="swiper-slide col-2"
-                                    style="border: 1px solid black; text-align: center;height: 100%;width: 100%;">
-                                    4 </div>
-
-                                <!-- Slide 5 -->
-                                <div class="swiper-slide col-2"
-                                    style="border: 1px solid black; text-align: center;height: 100%;width: 100%;">
-                                    5 </div>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper" id="swiper-wrapper">
+                                <!-- industrail.json -->
                             </div>
                         </div>
+                        
                     </div>
 
                 </div>
@@ -333,7 +368,7 @@
         <section class="product" id="products">
             <div class="row" style="background-color: black;">
                 <div class="col-12" style="text-align: center;">
-                    <div class="model" style="border: 1px solid white; padding-top: 10px;">
+                    <div class="model" style="padding-top: 10px;">
                         <p class="p" style="margin-left: 10px;">Products</p>
                         <h5 style="color: white; margin-left: 10px; font-weight: bold;">Top Selling Products</h5>
                         <div style="display: inline-block; margin-top: 10px;">
@@ -352,7 +387,7 @@
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
                     <div class="swiper-slide" style="background-color: black; text-align: center;">
-                        <div class="model" style="border: 1px solid white; padding: 20px;">
+                        <div class="model" style="padding: 20px;">
                             <h1 style="color: rgb(0, 72, 255); font-size: 40px;">03</h1>
                             <p>內文..........<br>內文..........</p>
                             <h6 style="color: white; font-weight: bold;">MCG 2000</h6>
@@ -652,11 +687,11 @@
                     slidesPerView: 4,
                     spaceBetween: 30,
                 },
-            }
+            },
         });
     </script>
     <script>
-        jQuery('a[href^=#]').on('click', function (e) {
+        jQuery('a[href^="#"]').on('click', function (e) {
             e.preventDefault();
             var href = $(this).attr('href');
             $('html, body').animate({
@@ -664,6 +699,106 @@
             }, 'slow');
         });
     </script>
+    <!-- Top回首頁 -->
+    <script>
+        // 當使用者滾動超過100px時顯示按鈕
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("topBtn").style.display = "block";
+            } else {
+                document.getElementById("topBtn").style.display = "none";
+            }
+        };
+
+        // 點擊按鈕回到頂部
+        document.getElementById('topBtn').addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // 平滑滾動
+            });
+        });
+        //
+        setTimeout(() => {
+            let _index = $('.carousel-item.active').index();
+            let h5 = $('.carousel-item').eq(_index).find('h5').text();
+            let title = `${h5}`;
+            $('div.model > strong p').eq(0).text(title);
+            let _sn = String(_index + 1).padStart(2, "0");
+            $('span.page-number').text(`${_sn}`);
+            let _row = String($('.carousel-item').length).padStart(2, "0");
+            $('span.page').text(`/${_row}`);
+        }, 500);
+        $('#carouselExampleDark').on('slid.bs.carousel', function () {
+            let _index = $('.carousel-item.active').index();
+            console.log(_index);
+            // let h1 = $('.carousel-item').eq(_index).find('h1').text();
+            // let title = `第${_index + 1}組${h1}`;
+            let h5 = $('.carousel-item').eq(_index).find('h5').text();
+            let title = `${h5}`;
+            $('div.model > strong p').eq(0).text(title);
+            let _sn = String(_index + 1).padStart(2, "0");
+            $('span.page-number').text(`${_sn}`);
+            let _row = String($('.carousel-item').length).padStart(2, "0");
+            $('span.page').text(`/${_row}`);
+        })
+    </script>
+
+    <!-- Banner.json -->
+    <script>
+        fetch('banner.json')
+            .then(response => response.json())
+            .then(data => {
+                const carouselContent = document.getElementById('carousel-content');
+                data.forEach((item, index) => {
+                    const carouselItem = document.createElement('div');
+                    carouselItem.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+                    carouselItem.innerHTML = `
+                        <div class="model" style="height: 450px;">
+                            <strong>
+                                <b>
+                                    <h1>${item.title}</h1>
+                                </b>
+                                <p style="border-left: 5px solid blue ; padding-left: 10px;">${item.description}</p>
+                            </strong>
+                            <h5 style="color: white; margin-top: 80px; font-weight: bold;">${item.model}</h5>
+                            <p>${item.content}</p>
+                            <span style="color: rgb(207, 207, 207); font-size: 12px;">read more
+                                 <img src="img/0.0首頁/箭頭.svg"  style="width: 30px; "></span>
+                            </span>
+                            ${item.image ? `<img src="${item.image}" style="width: auto; max-width: 40%; position: absolute; right: 30px; bottom: 0px;" class="d-block w-100" alt="...">` : ''}
+                        </div>
+                    `;
+                    carouselContent.appendChild(carouselItem);
+                });
+            })
+            .catch(error => console.error('Error fetching JSON data:', error));
+    </script>
+<!-- industrail.js -->
+<script>
+    // Fetch data from industrial.json and generate slides dynamically
+    fetch('industrial.json')
+        .then(response => response.json())
+        .then(data => {
+            const wrapper = document.getElementById('swiper-wrapper');
+            data.slides.forEach(slide => {
+                const slideElement = document.createElement('div');
+                slideElement.classList.add('swiper-slide', 'col-2');
+                slideElement.style.textAlign = 'center';
+                slideElement.style.height = '100%';
+                slideElement.style.width = '100%';
+                
+                const imgElement = document.createElement('img');
+                imgElement.src = slide.image;
+                imgElement.alt = slide.alt;
+                imgElement.style.width = '100px';
+                
+                slideElement.appendChild(imgElement);
+                wrapper.appendChild(slideElement);
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+</script>
+
 </body>
 
 </html>
