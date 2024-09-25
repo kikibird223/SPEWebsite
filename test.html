@@ -440,46 +440,21 @@
         <!-- 服務 -->
         <section class="services" id="services">
             <div class="row" style="background-color: white;">
-                <div class="col-lg-10 col-md-8 col-sm-4" style=" margin:50px 0px 50px 50px; border: 1px solid black;"
+                <div class="col-lg-10 col-md-8 col-sm-4" style=" margin:50px 0px 50px 50px;"
                     height="100%">
-                    <div class="model" style="border: 1px solid black;">
+                    <div class="model">
                         <div style="border-left: 2px solid blue;">
-                            <div class="swiper-container ">
-                                <div class="swiper-wrapper ">
-                                    <!-- Slide 1 -->
-                                    <div class="swiper-slide col-2"
-                                        style="border: 1px solid black; text-align: center; height: 80px;width: 100%;">
-                                        1</div>
-
-                                    <!-- Slide 2 -->
-                                    <div class="swiper-slide col-2"
-                                        style="border: 1px solid black; text-align: center;height: 80px;width: 100%;">
-                                        2
-                                    </div>
-                                    <!-- Slide 3 -->
-                                    <div class="swiper-slide col-2"
-                                        style="border: 1px solid black; text-align: center;height: 80px;width: 100%;">
-                                        3 </div>
-
-                                    <!-- Slide 4 -->
-                                    <div class="swiper-slide col-2"
-                                        style="border: 1px solid black; text-align: center;height: 80px;width: 100%;">
-                                        4 </div>
-
-                                    <!-- Slide 5 -->
-                                    <div class="swiper-slide col-2"
-                                        style="border: 1px solid black; text-align: center;height: 80px;width: 100%;">
-                                        5 </div>
-                                </div>
-                            </div>
                             <p class="p" style="color: black; margin-left:10px ;">Where we work </p>
                             <h5 style="color: black; margin-left:10px ; font-weight: bold ;">Services
                                 <i class="bi bi-arrow-left-short color-white"></i>
                                 <i class="bi bi-arrow-right-short color-primary"></i>
                             </h5>
-
                         </div>
-
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper" id="swiper-wrapper-service">
+                                <!-- service.json -->
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -799,6 +774,31 @@
         .catch(error => console.error('Error fetching data:', error));
 </script>
 
+<!-- service.js -->
+<script>
+    // Fetch data from service.json and generate slides dynamically
+    fetch('service.json')
+        .then(response => response.json())
+        .then(data => {
+            const wrapper = document.getElementById('swiper-wrapper-service');
+            data.services.forEach(service => {
+                const slideElement = document.createElement('div');
+                slideElement.classList.add('swiper-slide', 'col-2');
+                slideElement.style.textAlign = 'center';
+                slideElement.style.height = '100%';
+                slideElement.style.width = '100%';
+                
+                const imgElement = document.createElement('img');
+                imgElement.src = service.image;
+                imgElement.alt = service.alt;
+                imgElement.style.width = '100px';
+                
+                slideElement.appendChild(imgElement);
+                wrapper.appendChild(slideElement);
+            });
+        })
+        .catch(error => console.error('Error fetching service data:', error));
+</script>
 </body>
 
 </html>
