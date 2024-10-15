@@ -1,0 +1,45 @@
+{
+    "resources": [
+      {
+        "year": "2020",
+        "day": "07",
+        "month": "10",
+        "image": "img/06.Resources/01.png",
+        "alt": "Pump Industry Winter 2020 Digital Edition",
+        "title": "Pump Industry",
+        "subtitle": "Winter 2020",
+        "edition": "Digital Edition"
+      },
+      {
+        "year": "2020",
+        "day": "03",
+        "month": "24",
+        "image": "img/06.Resources/02.png",
+        "alt": "Pump Industry Summer 2020 Digital Edition",
+        "title": "Pump Industry",
+        "subtitle": "Summer 2020",
+        "edition": "Digital Edition"
+      },
+      {
+        "year": "2020",
+        "day": "05",
+        "month": "06",
+        "image": "img/06.Resources/03.png",
+        "alt": "Pump Industry Winter 2020 Digital Edition",
+        "title": "Pump Industry",
+        "subtitle": "Winter 2020",
+        "edition": "Digital Edition"
+      },
+      {
+        "year": "2021",
+        "day": "10",
+        "month": "16",
+        "image": "img/06.Resources/04.png",
+        "alt": "Pump Industry Summer 2021 Digital Edition",
+        "title": "Pump Industry",
+        "subtitle": "Summer 2021",
+        "edition": "Digital Edition"
+      }
+    ]
+  }
+  

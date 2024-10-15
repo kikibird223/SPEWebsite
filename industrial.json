@@ -1,27 +1,51 @@
 {
     "slides": [
       {
-        "image": "img/02.工業應用/工業應用小icon-1.png",
+        "image": "img/02.industrial/工業應用小icon-1.png",
         "alt": "工業應用小icon-1"
       },
       {
-        "image": "img/02.工業應用/工業應用小icon-2.png",
+        "image": "img/02.industrial/工業應用小icon-2.png",
         "alt": "工業應用小icon-2"
       },
       {
-        "image": "img/02.工業應用/工業應用小icon-3.png",
+        "image": "img/02.industrial/工業應用小icon-3.png",
         "alt": "工業應用小icon-3"
       },
       {
-        "image": "img/02.工業應用/工業應用小icon-4.png",
+        "image": "img/02.industrial/工業應用小icon-4.png",
         "alt": "工業應用小icon-4"
       },
       {
-        "image": "img/02.工業應用/工業應用小icon-5.png",
+        "image": "img/02.industrial/工業應用小icon-5.png",
         "alt": "工業應用小icon-5"
       },
       {
-        "image": "img/02.工業應用/工業應用小icon-6.png",
+        "image": "img/02.industrial/工業應用小icon-6.png",
+        "alt": "工業應用小icon-6"
+      },
+      {
+        "image": "img/02.industrial/工業應用小icon-1.png",
+        "alt": "工業應用小icon-1"
+      },
+      {
+        "image": "img/02.industrial/工業應用小icon-2.png",
+        "alt": "工業應用小icon-2"
+      },
+      {
+        "image": "img/02.industrial/工業應用小icon-3.png",
+        "alt": "工業應用小icon-3"
+      },
+      {
+        "image": "img/02.industrial/工業應用小icon-4.png",
+        "alt": "工業應用小icon-4"
+      },
+      {
+        "image": "img/02.industrial/工業應用小icon-5.png",
+        "alt": "工業應用小icon-5"
+      },
+      {
+        "image": "img/02.industrial/工業應用小icon-6.png",
         "alt": "工業應用小icon-6"
       }
     ]

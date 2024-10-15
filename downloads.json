@@ -1,0 +1,78 @@
+{
+  "downloads": [
+    {
+      "title": "MGS® 2000TM",
+      "description": [
+        "FOR MIXERS AND AGITATORS",
+        "HIGH RELIABILITY",
+        "DUAL CARTRIDGE SEALS"
+      ],
+      "enquiry": "path/to/enquiry-form.pdf",
+      "brochure": "path/to/brochure.pdf"
+    },
+    {
+      "title": "CARLIFE®  99SSTM",
+      "description": [
+        "FOR MODERATELY ABRASIVE SERVICES",
+        "HIGH RELIABILITY DUAL CARTRIDGE SEALS"
+      ],
+      "enquiry": "",
+      "brochure": "path/to/product2-brochure.pdf"
+    },
+    {
+      "title": "MGS®  99TM",
+      "description": [
+        "DRY RUNNING SEAL FOR MIXER",
+        "IDEAL FOR LARGE MIXERS AND AGITATORS"
+      ],
+      "enquiry": "",
+      "brochure": "path/to/product3-brochure.pdf"
+    },
+    {
+      "title": "LD  388TM  /  LD  389TM",
+      "description": [
+        "FOR VOC EMISSION PREVENTION",
+        "SPECIFICALLY ENGINEERED"
+      ],
+      "enquiry": "",
+      "brochure": "path/to/product4-brochure.pdf"
+    },
+    {
+      "title": "MGS® 2000TM",
+      "description": [
+        "FOR MIXERS AND AGITATORS",
+        "HIGH RELIABILITY",
+        "DUAL CARTRIDGE SEALS"
+      ],
+      "enquiry": "path/to/enquiry-form.pdf",
+      "brochure": "path/to/brochure.pdf"
+    },
+    {
+      "title": "CARLIFE®  99SSTM",
+      "description": [
+        "FOR MODERATELY ABRASIVE SERVICES",
+        "HIGH RELIABILITY DUAL CARTRIDGE SEALS"
+      ],
+      "enquiry": "",
+      "brochure": "path/to/product2-brochure.pdf"
+    },
+    {
+      "title": "MGS®  99TM",
+      "description": [
+        "DRY RUNNING SEAL FOR MIXER",
+        "IDEAL FOR LARGE MIXERS AND AGITATORS"
+      ],
+      "enquiry": "",
+      "brochure": "path/to/product3-brochure.pdf"
+    },
+    {
+      "title": "LD  388TM  /  LD  389TM",
+      "description": [
+        "FOR VOC EMISSION PREVENTION",
+        "SPECIFICALLY ENGINEERED"
+      ],
+      "enquiry": "",
+      "brochure": "path/to/product4-brochure.pdf"
+    }
+  ]
+}
