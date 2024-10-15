@@ -1,23 +1,23 @@
-[
+ [
     {
         "title": "Future Leaders in Sealing System",
         "description": "SCENIC SEALS MAKE YOUR WORK EASY.",
         "model": "LD 388 / LD 389",
         "content": "▪️雙軸封<br> ▪️ VOC防制專用<br> ▪️ DIN/ANSI卡匣 串列式<br> ▪️ 耐高温高壓",
-        "image": "/img/0.0首頁/LD_388.png"
+        "image": "img/00_homepage/LD_388.png"
     },
     {
         "title": "INSPIRATION & INNOVATION",
         "description": "SCENIC SEALS NON-CONTACTING DRY GAS SEAL.",
         "model": "STG170",
         "content":"  ▪️專為蒸氣式渦輪機設計<br> ▪️ 可靠度高,非接觸式軸封零磨耗。",
-       "image": "/img/0.0首頁/STG170.png"
+       "image": "img/00_homepage/STG170.png"
     },
     {
         "title": "ECO FRIENDLY SEALING.",
         "description": "SCENIC SEALS MAKE YOUR WORK EASY.",
-        "model": "GSB 300",
+        "model": "MGS 2000",
         "content": "  ▪️ 大型攪拌機。<br> ▪️震幅大及運轉時軸心偏擺大的轉動設備應用。<br> ▪️ 防止VOC揮發之雙重密封轉動設備。",
-        "image": "/img/0.0首頁/MGS 2000.png"
+        "image": "img/00_homepage/MGS2000.png"
     }
 ]

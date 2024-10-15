@@ -41,7 +41,7 @@
         }
 
         .company {
-            background-image: url("img/0.0homepage/company.png");
+            background-image: url("img/00_homepage/company.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -53,13 +53,20 @@
             margin-top: 60px;
             height: 100%;
             width: 100%;
-            background-image: url("img/0.0homepage/底圖.png");
+            background-image: url("img/00_homepage/底圖.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
         }
 
         p {
+            font-size: 11px;
+            color: rgb(210, 210, 210);
+            font-family: 微軟正黑體;
+            font-weight: bold;
+        }
+        #p {
+            margin: 20px;
             font-size: 11px;
             color: rgb(210, 210, 210);
             font-family: 微軟正黑體;
@@ -116,14 +123,14 @@
             /* 使圖片居中顯示 */
             background-repeat: no-repeat;
             /* 不重複背景圖片 */
-            height: 300px;
+            height: 400px;
             width: 100%;
         }
 
         .footer-01 {
             margin-top: 0px;
             background-color: black;
-            height: 400px;
+            height: 300px;
             width: 100%;
             margin: 0 50px;
         }
@@ -220,7 +227,7 @@
         <div class="navbar navbar-dark shadow-sm">
             <div class="container">
                 <a href="#home" class="navbar-brand d-flex align-items-center">
-                    <img src="img/0.0homepage/logo.svg" height="30" class="me-2" alt="Logo" style="left: 0px;">
+                    <img src="img/00_homepage/logo.svg" height="30" class="me-2" alt="Logo" style="left: 0px;">
                     <p style="padding-top:17px ;"> <i><strong>Scenic Precise <br>
                                 Element</strong></i></p>
 
@@ -235,11 +242,11 @@
                     <a class="fs-8 me-3 py-2 text-white text-decoration-none" href="#download">Download</a>
 
                 </nav>
-                <button class="navbar-toggler ms-5" type="button" data-bs-toggle="collapse"
+                <!-- <button class="navbar-toggler ms-5" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
             </div>
         </div>
 

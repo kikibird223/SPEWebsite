@@ -1,0 +1,25 @@
+{
+    "product": [
+    {
+        "id": 1,
+        "title": "01",
+        "subtitle": "FOR MIXERS AND AGITATORS",
+        "name": "MCG 2000",
+        "features": [
+            "HIGH RELIABILITY DUAL",
+            "CARTRIDGE SEALS"
+        ],
+        "image": "img/03_product/MGS2000.png"
+    },
+    {
+        "id": 2,
+        "title": "02",
+        "subtitle": "FOR MODERATELY ABRASIVE SERVICES",
+        "name": "CARLIFE® 99SSTM",
+        "features": [
+            "FLUSHLESS SINGLE SEAL"
+        ],
+        "image": "img/03_product/CARLIFE®99SSTM.png"
+    }
+]
+}
